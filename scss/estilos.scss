@@ -1,0 +1,53 @@
+$fondo_nuevo: #336699 !important;
+
+.letras {
+  font-size: larger;
+  color: black;
+}
+.footer__font {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  p {
+    background-color: rgb(241, 235, 235);
+    padding: 30px;
+  }
+  text-decoration: none;
+}
+
+div {
+  p {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    text-decoration: double;
+    text-justify: auto;
+  }
+}
+.texto__mejorado {
+  p {
+    text-justify: distribute;
+  }
+}
+
+img {
+  float: left;
+  margin: 10px;
+}
+section {
+  h1 {
+    margin-top: 30px;
+    padding-top: 25px;
+    align-items: center;
+  }
+}
+
+@import "letranueva";
+
+footer {
+  p {
+    font-style: letranueva;
+  }
+}
+.unico {
+  background-color: $fondo_nuevo;
+  & :hover {
+    rotate: rotateX(90deg);
+  }
+}
