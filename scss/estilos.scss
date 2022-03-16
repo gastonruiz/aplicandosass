@@ -51,3 +51,58 @@ footer {
     rotate: rotateX(90deg);
   }
 }
+/* mapa de redes sociales */
+
+$redes: (
+  twitter: #51aff8,
+  facebook: #2956a3,
+  linkedin: #0076b8,
+  youtube: #ce1312,
+);
+
+@each $red, $color in $redes {
+  .red--#{$red} {
+    background: $color;
+    &:hover {
+      background: white;
+      .red__nombre {
+        color: $color;
+      }
+    }
+  }
+}
+/* map-get */
+.youtube {
+  color: map-get($redes, youtube);
+}
+.facebook {
+  color: map-get($redes, facebook);
+}
+
+.subrayado {
+  text-decoration: underline;
+}
+
+/* extend */
+
+.footer__font--letra {
+  @extend .footer__font;
+  @extend .subrayado;
+  padding-top: 100px;
+  text-align: inherit;
+}
+
+/* mixin */
+@mixin texto {
+  font: {
+    family: Arial;
+    size: 20px;
+    weight: bold;
+  }
+  color: #744646;
+}
+.estiloparrafo {
+  @include texto;
+  padding: 4px;
+  margin-top: 10px;
+}

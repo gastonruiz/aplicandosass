@@ -2,10 +2,10 @@
   font-size: larger;
   color: black; }
 
-.footer__font {
+.footer__font, .footer__font--letra {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-decoration: none; }
-  .footer__font p {
+  .footer__font p, .footer__font--letra p {
     background-color: #f1ebeb;
     padding: 30px; }
 
@@ -37,3 +37,56 @@ footer p {
   background-color: #336699 !important; }
   .unico :hover {
     rotate: rotateX(90deg); }
+
+/* mapa de redes sociales */
+.red--twitter {
+  background: #51aff8; }
+  .red--twitter:hover {
+    background: white; }
+    .red--twitter:hover .red__nombre {
+      color: #51aff8; }
+
+.red--facebook {
+  background: #2956a3; }
+  .red--facebook:hover {
+    background: white; }
+    .red--facebook:hover .red__nombre {
+      color: #2956a3; }
+
+.red--linkedin {
+  background: #0076b8; }
+  .red--linkedin:hover {
+    background: white; }
+    .red--linkedin:hover .red__nombre {
+      color: #0076b8; }
+
+.red--youtube {
+  background: #ce1312; }
+  .red--youtube:hover {
+    background: white; }
+    .red--youtube:hover .red__nombre {
+      color: #ce1312; }
+
+/* map-get */
+.youtube {
+  color: #ce1312; }
+
+.facebook {
+  color: #2956a3; }
+
+.subrayado, .footer__font--letra {
+  text-decoration: underline; }
+
+/* extend */
+.footer__font--letra {
+  padding-top: 100px;
+  text-align: inherit; }
+
+/* mixin */
+.estiloparrafo {
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+  color: #744646;
+  padding: 4px;
+  margin-top: 10px; }
